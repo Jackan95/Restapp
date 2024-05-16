@@ -1,0 +1,196 @@
+@charset "ISO-8859-1";
+
+@media screen and (max-width:600px) {
+	.column {
+		width: 100%;
+	}
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+header {
+	padding: 10px;
+	text-align: center;
+	font-size: 45px;
+	background-color: black;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	color: white;
+	
+}
+
+
+section#row {
+	padding: 10px 0px 10px 0px;
+	display: block;
+    display: flex;
+    justify-content: center;
+	
+}
+
+section#row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+section#main {
+	width: 100%;
+	padding: 70px 10px 70px 15px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+section#content {
+	width: 100%;
+	text-align: center;
+	padding: 10px 10px 10px 10px;
+	color: #000000;
+	font-family: Arial, sans-serif;
+}
+
+#PersonalFS {
+	width: 50%;
+	text-align: center;
+	margin: auto; 
+	border: 2px solid black; 
+	border-radius: 12px;
+	padding: 50px; /* Adding padding to increase height */
+    height: auto; 
+    background-color: #f5f5ff;
+	background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background color */
+background-size: 44px 44px;
+background-position: 0 0, 22px 22px;
+	}
+	
+legend {
+ 	font-size: 40px;
+ 	font-weight: bold;
+ 	font-family: Arial, sans-serif;
+ 	color: white;
+ 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+ 	padding: 0px 300px;
+ 	border-radius: 36px;
+ 	
+ }
+ 
+ #PersonalFS label{
+ font-weight: bold;
+ font-size: 30px;
+font-family: Arial, sans-serif;
+
+}
+
+#PersonalFS input {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid black;
+	box-sizing: border-box;
+	font-size: 20px;
+	text-align: center;
+	background-color: white;
+}
+
+
+
+button{
+	background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 12px;
+	}
+	
+#AddBtn {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #04AA6D;
+}
+
+#AddBtn:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+#DeleteBtn {
+  background-color: white; 
+  color: black; 
+  border: 2px solid red;
+}
+
+#DeleteBtn:hover {
+  background-color: red;
+  color: white;
+}
+
+#FindBtn {
+  background-color: white; 
+  color: black; 
+  border: 2px solid blue;
+}
+
+#FindBtn:hover {
+  background-color: blue;
+  color: white;
+}
+
+#UpdateBtn {
+  background-color: white;
+  color: black;
+  border: 2px solid orange;
+}
+
+#UpdateBtn:hover {
+	background-color: orange;
+	color: white;
+	}
+	
+#ClearBtn {
+  background-color: white;
+  color: black;
+  border: 2px solid grey;
+}
+
+#ClearBtn:hover {
+	background-color: grey;
+	color: white;
+	}
+
+
+footer {
+	text-align: center;
+	padding: 20px;
+	background-color: black;
+	color: white;
+	clear: both;
+	font-size: 20px;
+}
+
